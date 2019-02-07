@@ -35,10 +35,7 @@ students.sort(function (a, b) {
   } else if (persA > persB) {
     return 1;
   } else if (persA === persB) {
-    if (a.age > b.age) {
-      return -1;
-    }
-    return 1;
+    return b.age - a.age;
   }
 });
 
